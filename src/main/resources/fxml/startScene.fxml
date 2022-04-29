@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900.0" minWidth="1000.0" prefHeight="900.0" prefWidth="1000.0" style="-fx-background-color: #949494;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handling.StartController">
+    <bottom>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Button fx:id="helpButton" mnemonicParsing="false" onAction="#help" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: bababa;" text="HELP" textFill="#e3eb00">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+                <HBox.margin>
+                    <Insets bottom="25.0" left="50.0" right="750.0" />
+                </HBox.margin>
+            <font>
+               <Font name="Fira Code Regular" size="20.0" />
+            </font>
+            </Button>
+            <Group>
+            <Button fx:id="exitButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exit" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: bababa;" text="EXIT" textAlignment="CENTER" textFill="#b50000">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            <font>
+               <Font name="Fira Code Regular" size="20.0" />
+            </font>
+            </Button>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#back" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: bababa;" text="BACK" visible="false">
+               <font>
+                  <Font name="Fira Code Regular" size="20.0" />
+               </font></Button>
+            </Group>
+        </HBox>
+    </bottom>
+   <top>
+      <VBox fx:id="title" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+             <Group>
+               <children>
+                  <Label fx:id="win" alignment="CENTER" contentDisplay="CENTER" prefHeight="110.0" prefWidth="1000.0" text="BOT COMPLETE DEMINING" textAlignment="CENTER" textFill="#089712" visible="false">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lose" alignment="CENTER" prefHeight="108.0" prefWidth="1000.0" text="BOT FAILED" textAlignment="CENTER" textFill="#dd0505" visible="false">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sap" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" text="S A P P E R" textAlignment="CENTER">
+                     <font>
+                        <Font name="Cascadia Code Regular" size="80.0" />
+                     </font>
+                  </Label>
+               </children>
+             </Group>
+            <Label fx:id="bott" text="B O T">
+               <font>
+                  <Font name="Fira Code Regular" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+              <Button fx:id="startButton" onAction="#start" prefHeight="113.0" prefWidth="280.0" style="-fx-background-color: #bababa;" text="NEW GAME">
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="-100.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Fira Code Regular" size="40.0" />
+               </font>
+              </Button>
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settings" prefHeight="113.0" prefWidth="280.0" style="-fx-background-color: #bababa;" text="SETTINGS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Fira Code Regular" size="40.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

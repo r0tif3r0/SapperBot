@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900.0" minWidth="1000.0" prefHeight="900.0" prefWidth="1000.0" style="-fx-background-color: #949494;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handling.SettingsController">
+   <top>
+      <Label text="SETTINGS" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Fira Code Regular" size="70.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin></Label>
+   </top>
+   <bottom>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#back" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: bababa;" text="BACK" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="850.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Fira Code Regular" size="20.0" />
+         </font></Button>
+   </bottom>
+   <center>
+      <HBox alignment="TOP_CENTER" prefHeight="535.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="150.0"/>
+         </BorderPane.margin>
+         <Label text="DIFFICULTY: ">
+            <font>
+               <Font name="Fira Code Regular" size="40.0"/>
+            </font>
+            <HBox.margin>
+               <Insets/>
+            </HBox.margin>
+         </Label>
+         <fx:define>
+            <ToggleGroup fx:id="group" />
+         </fx:define>
+         <RadioButton fx:id="easyRB" mnemonicParsing="false" selected="true" text="EASY" toggleGroup="$group">
+            <font>
+               <Font name="Fira Code Regular" size="25.0"/>
+            </font>
+            <HBox.margin>
+               <Insets right="10.0" top="15.0"/>
+            </HBox.margin>
+         </RadioButton>
+      </HBox>
+   </center>
+</BorderPane>
